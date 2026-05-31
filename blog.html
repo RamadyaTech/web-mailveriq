@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MailVeriQ Blog — Insights and resources on email DLP, compliance, and outbound data security.">
+  <title>Insights &amp; Resources — MailVeriQ</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    .inner-page { padding: 130px 0 80px; }
+    .inner-page h1 { font-size: 2.25rem; font-weight: 800; color: var(--navy); margin-bottom: 8px; }
+    .inner-page .updated { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 40px; }
+    .inner-page h2 { font-size: 1.2rem; font-weight: 700; color: var(--navy); margin: 36px 0 12px; }
+    .inner-page h3 { font-size: 1rem; font-weight: 600; color: var(--navy); margin: 24px 0 8px; }
+    .inner-page p, .inner-page li { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.8; margin-bottom: 12px; }
+    .inner-page ul { padding-left: 24px; list-style: disc; }
+    .inner-page a { color: var(--blue); }
+    .inner-content { max-width: 900px; }
+    .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 28px; margin-top: 32px; }
+    .blog-card { background: var(--surface, #f8fafc); border: 1px solid var(--border, #e2e8f0); border-radius: 12px; padding: 28px; transition: box-shadow 0.2s, transform 0.2s; display: flex; flex-direction: column; }
+    .blog-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.08); transform: translateY(-2px); }
+    .blog-card .category { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--blue); margin-bottom: 10px; }
+    .blog-card h3 { margin: 0 0 10px; font-size: 1.1rem; line-height: 1.4; }
+    .blog-card h3 a { color: var(--navy); text-decoration: none; }
+    .blog-card h3 a:hover { color: var(--blue); }
+    .blog-card .excerpt { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.7; flex: 1; margin-bottom: 16px; }
+    .blog-card .meta { font-size: 0.8rem; color: var(--text-muted); margin-top: auto; }
+    .blog-card .read-more { font-size: 0.85rem; font-weight: 600; color: var(--blue); text-decoration: none; margin-top: 12px; display: inline-block; }
+    .blog-card .read-more:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="#0B1F3F"/><path d="M9 14L18 20L27 14" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 14V23L18 29L27 23V14L18 8L9 14Z" stroke="#fff" stroke-width="1.5" stroke-linejoin="round" fill="none"/><circle cx="18" cy="18" r="2.5" fill="#3B82F6"/></svg>
+        <span class="logo-text">Mail<span class="logo-accent">VeriQ</span></span>
+      </a>
+      <div class="nav-actions">
+        <a href="index.html" class="btn btn-ghost">Back to Home</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="inner-page">
+    <div class="container inner-content">
+      <h1>Insights &amp; Resources</h1>
+      <p class="updated">Expert perspectives on email security, data loss prevention, and compliance.</p>
+
+      <div class="blog-grid">
+
+        <div class="blog-card">
+          <span class="category">Email Security</span>
+          <h3><a href="#">Understanding Outbound Email DLP: Why Inbound Protection Is Not Enough</a></h3>
+          <p class="excerpt">Most organizations invest heavily in stopping threats from entering their network. But what about the sensitive data flowing out? Outbound email remains one of the largest and most overlooked vectors for data loss in the enterprise.</p>
+          <span class="meta">May 15, 2026</span>
+          <a href="#" class="read-more">Read Article</a>
+        </div>
+
+        <div class="blog-card">
+          <span class="category">Compliance</span>
+          <h3><a href="#">HIPAA Compliance for Email: A Practical Guide for Healthcare Organizations</a></h3>
+          <p class="excerpt">Healthcare providers handle some of the most sensitive data in any industry. This guide examines how email DLP policies can be configured to detect PHI in outbound messages and maintain compliance with HIPAA requirements.</p>
+          <span class="meta">April 28, 2026</span>
+          <a href="#" class="read-more">Read Article</a>
+        </div>
+
+        <div class="blog-card">
+          <span class="category">Industry Research</span>
+          <h3><a href="#">The Hidden Cost of Data Breaches: Beyond Fines and Remediation</a></h3>
+          <p class="excerpt">Regulatory penalties capture the headlines, but the true cost of a data breach extends far beyond the initial fine. Customer attrition, brand erosion, and operational disruption often dwarf the direct financial impact.</p>
+          <span class="meta">April 10, 2026</span>
+          <a href="#" class="read-more">Read Article</a>
+        </div>
+
+        <div class="blog-card">
+          <span class="category">Best Practices</span>
+          <h3><a href="#">Building an Email Security Policy That Actually Works</a></h3>
+          <p class="excerpt">An effective email security policy must balance protection with productivity. Learn how to define DLP rules, establish approval workflows, and roll out policies incrementally without disrupting business operations.</p>
+          <span class="meta">March 22, 2026</span>
+          <a href="#" class="read-more">Read Article</a>
+        </div>
+
+        <div class="blog-card">
+          <span class="category">Compliance</span>
+          <h3><a href="#">SOC 2 Compliance: What You Need to Know Before Your First Audit</a></h3>
+          <p class="excerpt">Preparing for a SOC 2 Type II audit can be daunting. This article breaks down the Trust Services Criteria, explains what auditors evaluate, and outlines how email DLP controls map to SOC 2 requirements.</p>
+          <span class="meta">March 5, 2026</span>
+          <a href="#" class="read-more">Read Article</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top:none;padding-top:0;">
+        <p>&copy; 2026 MailVeriQ Technologies. All rights reserved.</p>
+        <div>
+          <a href="index.html" style="color:var(--blue);font-size:0.85rem;">Home</a> &nbsp;|&nbsp;
+          <a href="privacy.html" style="color:var(--text-muted);font-size:0.85rem;">Privacy</a> &nbsp;|&nbsp;
+          <a href="terms.html" style="color:var(--text-muted);font-size:0.85rem;">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

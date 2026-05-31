@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MailVeriQ Support — Get help with deployment, configuration, and troubleshooting.">
+  <title>Support — MailVeriQ</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    .inner-page { padding: 130px 0 80px; }
+    .inner-page h1 { font-size: 2.25rem; font-weight: 800; color: var(--navy); margin-bottom: 8px; }
+    .inner-page .updated { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 40px; }
+    .inner-page h2 { font-size: 1.2rem; font-weight: 700; color: var(--navy); margin: 36px 0 12px; }
+    .inner-page h3 { font-size: 1rem; font-weight: 600; color: var(--navy); margin: 24px 0 8px; }
+    .inner-page p, .inner-page li { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.8; margin-bottom: 12px; }
+    .inner-page ul { padding-left: 24px; list-style: disc; }
+    .inner-page a { color: var(--blue); }
+    .inner-content { max-width: 760px; }
+    .support-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin: 24px 0 40px; }
+    .support-card { background: var(--surface, #f8fafc); border: 1px solid var(--border, #e2e8f0); border-radius: 12px; padding: 28px; }
+    .support-card h3 { margin-top: 0; font-size: 1.05rem; }
+    .support-card .channel { font-size: 0.85rem; color: var(--blue); font-weight: 600; margin-bottom: 8px; }
+  </style>
+</head>
+<body>
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="#0B1F3F"/><path d="M9 14L18 20L27 14" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 14V23L18 29L27 23V14L18 8L9 14Z" stroke="#fff" stroke-width="1.5" stroke-linejoin="round" fill="none"/><circle cx="18" cy="18" r="2.5" fill="#3B82F6"/></svg>
+        <span class="logo-text">Mail<span class="logo-accent">VeriQ</span></span>
+      </a>
+      <div class="nav-actions">
+        <a href="index.html" class="btn btn-ghost">Back to Home</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="inner-page">
+    <div class="container inner-content">
+      <h1>Support</h1>
+      <p class="updated">We're here to help you get the most from MailVeriQ Gateway.</p>
+
+      <h2>Support Channels</h2>
+      <div class="support-grid">
+        <div class="support-card">
+          <div class="channel">Email Support</div>
+          <h3>General Inquiries</h3>
+          <p>Reach our support team for configuration questions, troubleshooting, and product guidance.</p>
+          <p><a href="mailto:support@mailveriq.com">support@mailveriq.com</a></p>
+        </div>
+        <div class="support-card">
+          <div class="channel">Priority Support</div>
+          <h3>Enterprise &amp; Business Plans</h3>
+          <p>Enterprise and Business customers receive priority support with accelerated response times and a dedicated support engineer.</p>
+          <p><a href="mailto:priority@mailveriq.com">priority@mailveriq.com</a></p>
+        </div>
+        <div class="support-card">
+          <div class="channel">Emergency</div>
+          <h3>Critical Issues</h3>
+          <p>For service outages or security incidents affecting production email flow, contact our emergency line for immediate assistance.</p>
+          <p><a href="mailto:emergency@mailveriq.com">emergency@mailveriq.com</a></p>
+        </div>
+        <div class="support-card">
+          <div class="channel">Sales</div>
+          <h3>Pre-Sales &amp; Demos</h3>
+          <p>Interested in MailVeriQ? Our sales team can walk you through a live demo and discuss your organization's requirements.</p>
+          <p><a href="mailto:sales@mailveriq.com">sales@mailveriq.com</a></p>
+        </div>
+      </div>
+
+      <h2>Response Times</h2>
+      <p>Our support team operates globally to ensure timely resolution of your issues.</p>
+      <ul>
+        <li><strong>Critical (P1):</strong> Service outage or complete email flow disruption — 1-hour initial response, 24/7</li>
+        <li><strong>High (P2):</strong> Major feature degradation or policy enforcement failure — 4-hour response during business hours</li>
+        <li><strong>Normal (P3):</strong> Configuration questions, non-blocking issues — 1 business day response</li>
+        <li><strong>Low (P4):</strong> Feature requests, general inquiries — 2 business day response</li>
+      </ul>
+      <p>Enterprise plan customers receive enhanced SLAs with faster response and resolution targets. See our <a href="sla.html">Service Level Agreement</a> for details.</p>
+
+      <h2>Getting Started</h2>
+      <p>New to MailVeriQ? Here's how to get up and running quickly:</p>
+      <ul>
+        <li><strong>Onboarding:</strong> Our implementation team guides you through initial gateway configuration, DNS setup, and policy creation.</li>
+        <li><strong>Training:</strong> We provide administrator training sessions covering policy management, quarantine workflows, and reporting.</li>
+        <li><strong>Documentation:</strong> Comprehensive product documentation is available within the MailVeriQ Gateway dashboard for all users.</li>
+      </ul>
+
+      <h2>Common Topics</h2>
+      <h3>Deployment &amp; Configuration</h3>
+      <ul>
+        <li>SMTP relay and smart host configuration</li>
+        <li>DNS (MX/SPF/DKIM/DMARC) setup guidance</li>
+        <li>TLS certificate configuration</li>
+        <li>Multi-tenant environment setup</li>
+      </ul>
+
+      <h3>Policy Management</h3>
+      <ul>
+        <li>Creating and testing DLP policies</li>
+        <li>Custom regex pattern configuration</li>
+        <li>Approval workflow and escalation setup</li>
+        <li>Quarantine management best practices</li>
+      </ul>
+
+      <h3>Administration</h3>
+      <ul>
+        <li>User and role management (RBAC)</li>
+        <li>Audit log access and reporting</li>
+        <li>SSO and directory integration</li>
+        <li>Alert and notification configuration</li>
+      </ul>
+
+      <h2>Feedback &amp; Feature Requests</h2>
+      <p>We value your input. Share product feedback, feature requests, or improvement suggestions with our product team at <a href="mailto:feedback@mailveriq.com">feedback@mailveriq.com</a>.</p>
+
+      <h2>Security Concerns</h2>
+      <p>To report a security vulnerability or concern, contact our security team at <a href="mailto:security@mailveriq.com">security@mailveriq.com</a>. We follow responsible disclosure practices and acknowledge all reports within 24 hours.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top:none;padding-top:0;">
+        <p>&copy; 2026 MailVeriQ Technologies. All rights reserved.</p>
+        <div>
+          <a href="index.html" style="color:var(--blue);font-size:0.85rem;">Home</a> &nbsp;|&nbsp;
+          <a href="privacy.html" style="color:var(--text-muted);font-size:0.85rem;">Privacy</a> &nbsp;|&nbsp;
+          <a href="terms.html" style="color:var(--text-muted);font-size:0.85rem;">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

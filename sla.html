@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MailVeriQ Service Level Agreement — Uptime commitments, support response times, and service credits.">
+  <title>Service Level Agreement — MailVeriQ</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    .inner-page { padding: 130px 0 80px; }
+    .inner-page h1 { font-size: 2.25rem; font-weight: 800; color: var(--navy); margin-bottom: 8px; }
+    .inner-page .updated { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 40px; }
+    .inner-page h2 { font-size: 1.2rem; font-weight: 700; color: var(--navy); margin: 36px 0 12px; }
+    .inner-page h3 { font-size: 1rem; font-weight: 600; color: var(--navy); margin: 24px 0 8px; }
+    .inner-page p, .inner-page li { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.8; margin-bottom: 12px; }
+    .inner-page ul { padding-left: 24px; list-style: disc; }
+    .inner-page a { color: var(--blue); }
+    .inner-content { max-width: 760px; }
+    .sla-table { width: 100%; border-collapse: collapse; margin: 16px 0 28px; font-size: 0.9rem; }
+    .sla-table th, .sla-table td { padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--border, #e2e8f0); }
+    .sla-table th { background: var(--surface, #f8fafc); font-weight: 600; color: var(--navy); font-size: 0.85rem; }
+    .sla-table td { color: var(--text-secondary); }
+    .sla-table tr:last-child td { border-bottom: none; }
+  </style>
+</head>
+<body>
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="#0B1F3F"/><path d="M9 14L18 20L27 14" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 14V23L18 29L27 23V14L18 8L9 14Z" stroke="#fff" stroke-width="1.5" stroke-linejoin="round" fill="none"/><circle cx="18" cy="18" r="2.5" fill="#3B82F6"/></svg>
+        <span class="logo-text">Mail<span class="logo-accent">VeriQ</span></span>
+      </a>
+      <div class="nav-actions">
+        <a href="index.html" class="btn btn-ghost">Back to Home</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="inner-page">
+    <div class="container inner-content">
+      <h1>Service Level Agreement</h1>
+      <p class="updated">Last updated: May 29, 2026</p>
+
+      <p>This Service Level Agreement ("SLA") is incorporated into the agreement between MailVeriQ Technologies ("MailVeriQ", "we") and the customer organization ("Customer", "you") for the MailVeriQ Gateway service. This SLA defines the service availability commitments, support response times, and remedies applicable to the subscription.</p>
+
+      <h2>1. Service Availability</h2>
+      <p>MailVeriQ commits to a monthly uptime percentage of 99.9% for the MailVeriQ Gateway service, measured across the SMTP gateway, management console, and API endpoints. Uptime is calculated as follows:</p>
+      <p><strong>Monthly Uptime % = ((Total Minutes in Month - Downtime Minutes) / Total Minutes in Month) x 100</strong></p>
+      <p>"Downtime" means a period during which the SMTP gateway is unable to accept inbound connections from the Customer's mail transfer agent, or the management console is inaccessible to authenticated users. Downtime is measured by MailVeriQ's monitoring systems starting from the time an incident is detected.</p>
+
+      <h2>2. Planned Maintenance</h2>
+      <p>Planned maintenance windows are excluded from downtime calculations. MailVeriQ shall:</p>
+      <ul>
+        <li>Notify Customer administrators at least 72 hours in advance of scheduled maintenance</li>
+        <li>Schedule maintenance during low-traffic hours (Saturdays 02:00 - 06:00 UTC) whenever possible</li>
+        <li>Limit planned maintenance to no more than 4 hours per calendar month</li>
+        <li>Provide a maintenance summary to Customer administrators upon completion</li>
+      </ul>
+      <p>Emergency maintenance required to address critical security vulnerabilities or active threats may be performed with shorter notice. MailVeriQ will communicate emergency maintenance as soon as reasonably practicable.</p>
+
+      <h2>3. Support Response Times</h2>
+      <p>MailVeriQ provides tiered support response times based on the Customer's subscription plan and the severity of the issue:</p>
+
+      <table class="sla-table">
+        <thead>
+          <tr>
+            <th>Severity</th>
+            <th>Starter</th>
+            <th>Professional</th>
+            <th>Enterprise</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Critical (P1)</strong></td>
+            <td>24 hours</td>
+            <td>4 hours</td>
+            <td>1 hour</td>
+          </tr>
+          <tr>
+            <td><strong>High (P2)</strong></td>
+            <td>48 hours</td>
+            <td>8 hours</td>
+            <td>2 hours</td>
+          </tr>
+          <tr>
+            <td><strong>Medium (P3)</strong></td>
+            <td>72 hours</td>
+            <td>24 hours</td>
+            <td>8 hours</td>
+          </tr>
+          <tr>
+            <td><strong>Low (P4)</strong></td>
+            <td>5 business days</td>
+            <td>48 hours</td>
+            <td>24 hours</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Response times are measured from the time a support ticket is submitted through an authorized channel to the time a MailVeriQ support representative provides an initial substantive response.</p>
+
+      <h2>4. Incident Severity Definitions</h2>
+      <ul>
+        <li><strong>Critical (P1):</strong> The SMTP gateway is completely unavailable or unable to process outbound email for the Customer's organization. No workaround exists. Email delivery is halted.</li>
+        <li><strong>High (P2):</strong> A major feature of the platform is significantly impaired (e.g., approval workflows not functioning, quarantine inaccessible), but email continues to flow through the gateway. A partial workaround may exist.</li>
+        <li><strong>Medium (P3):</strong> A non-critical feature is impaired or behaving inconsistently (e.g., reporting delays, notification failures). The core email processing and DLP functionality remains operational.</li>
+        <li><strong>Low (P4):</strong> General questions, documentation requests, minor user interface issues, or feature requests that do not affect service operation.</li>
+      </ul>
+
+      <h2>5. Service Credits</h2>
+      <p>If MailVeriQ fails to meet the 99.9% monthly uptime commitment, the Customer is entitled to service credits as follows:</p>
+
+      <table class="sla-table">
+        <thead>
+          <tr>
+            <th>Monthly Uptime Percentage</th>
+            <th>Service Credit (% of Monthly Fee)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>99.0% - 99.89%</td>
+            <td>10%</td>
+          </tr>
+          <tr>
+            <td>95.0% - 98.99%</td>
+            <td>25%</td>
+          </tr>
+          <tr>
+            <td>Below 95.0%</td>
+            <td>50%</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Service credits are applied to the Customer's next invoice and do not entitle the Customer to a cash refund. The maximum aggregate service credit for any calendar month shall not exceed 50% of the monthly fee for that month.</p>
+
+      <h3>Credit Request Process</h3>
+      <p>To receive a service credit, the Customer must submit a written request to <a href="mailto:support@mailveriq.com">support@mailveriq.com</a> within 30 days of the end of the affected calendar month. The request must identify the dates and times of the claimed downtime. MailVeriQ will review the request against its monitoring data and respond within 10 business days.</p>
+
+      <h2>6. Exclusions</h2>
+      <p>This SLA does not apply to service disruptions caused by:</p>
+      <ul>
+        <li>Planned maintenance windows communicated in accordance with Section 2</li>
+        <li>Actions or omissions of the Customer, including misconfiguration of SMTP routing, DNS settings, or DLP policies</li>
+        <li>Failures of the Customer's own email infrastructure, network, or internet service provider</li>
+        <li>Force majeure events, including natural disasters, acts of war, government actions, or widespread internet outages beyond MailVeriQ's control</li>
+        <li>Features or services explicitly designated as "Beta" or "Preview"</li>
+        <li>Abuse or use of the service in violation of the Terms of Service or Acceptable Use Policy</li>
+        <li>DNS propagation delays or third-party DNS provider failures</li>
+      </ul>
+
+      <h2>7. Status Page</h2>
+      <p>MailVeriQ maintains a public status page providing real-time service status, historical uptime data, and incident reports. Customers may subscribe to status updates via email or RSS.</p>
+
+      <h2>8. Modifications</h2>
+      <p>MailVeriQ may update this SLA with at least 30 days' written notice. Changes will not reduce the level of service commitments for any Customer's current subscription term.</p>
+
+      <h2>9. Contact</h2>
+      <p>For SLA-related inquiries or service credit requests:<br>
+      Email: <a href="mailto:support@mailveriq.com">support@mailveriq.com</a><br>
+      MailVeriQ Technologies<br>
+      Customer Operations Team</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top:none;padding-top:0;">
+        <p>&copy; 2026 MailVeriQ Technologies. All rights reserved.</p>
+        <div>
+          <a href="index.html" style="color:var(--blue);font-size:0.85rem;">Home</a> &nbsp;|&nbsp;
+          <a href="privacy.html" style="color:var(--text-muted);font-size:0.85rem;">Privacy</a> &nbsp;|&nbsp;
+          <a href="terms.html" style="color:var(--text-muted);font-size:0.85rem;">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

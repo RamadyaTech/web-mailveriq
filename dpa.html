@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MailVeriQ Data Processing Agreement — Terms governing the processing of personal data.">
+  <title>Data Processing Agreement — MailVeriQ</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    .inner-page { padding: 130px 0 80px; }
+    .inner-page h1 { font-size: 2.25rem; font-weight: 800; color: var(--navy); margin-bottom: 8px; }
+    .inner-page .updated { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 40px; }
+    .inner-page h2 { font-size: 1.2rem; font-weight: 700; color: var(--navy); margin: 36px 0 12px; }
+    .inner-page h3 { font-size: 1rem; font-weight: 600; color: var(--navy); margin: 24px 0 8px; }
+    .inner-page p, .inner-page li { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.8; margin-bottom: 12px; }
+    .inner-page ul { padding-left: 24px; list-style: disc; }
+    .inner-page a { color: var(--blue); }
+    .inner-content { max-width: 760px; }
+  </style>
+</head>
+<body>
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="#0B1F3F"/><path d="M9 14L18 20L27 14" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 14V23L18 29L27 23V14L18 8L9 14Z" stroke="#fff" stroke-width="1.5" stroke-linejoin="round" fill="none"/><circle cx="18" cy="18" r="2.5" fill="#3B82F6"/></svg>
+        <span class="logo-text">Mail<span class="logo-accent">VeriQ</span></span>
+      </a>
+      <div class="nav-actions">
+        <a href="index.html" class="btn btn-ghost">Back to Home</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="inner-page">
+    <div class="container inner-content">
+      <h1>Data Processing Agreement</h1>
+      <p class="updated">Last updated: May 29, 2026</p>
+
+      <p>This Data Processing Agreement ("DPA") forms part of the agreement between MailVeriQ Technologies ("Processor", "we", "us") and the customer organization ("Controller", "you") for the provision of the MailVeriQ Gateway service. This DPA sets forth the terms and conditions under which the Processor shall process Personal Data on behalf of the Controller.</p>
+
+      <h2>1. Definitions</h2>
+      <p>For the purposes of this DPA, the following definitions apply:</p>
+      <ul>
+        <li><strong>"Personal Data"</strong> means any information relating to an identified or identifiable natural person that is processed by the Processor in the course of providing the MailVeriQ Gateway service.</li>
+        <li><strong>"Processing"</strong> means any operation or set of operations performed on Personal Data, including collection, recording, storage, adaptation, retrieval, consultation, use, disclosure, combination, restriction, erasure, or destruction.</li>
+        <li><strong>"Data Subject"</strong> means an identified or identifiable natural person to whom Personal Data relates.</li>
+        <li><strong>"Sub-Processor"</strong> means any third party engaged by the Processor to process Personal Data on behalf of the Controller.</li>
+        <li><strong>"Data Breach"</strong> means a breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to, Personal Data.</li>
+        <li><strong>"Applicable Data Protection Law"</strong> means all applicable laws and regulations relating to the processing of Personal Data, including the GDPR (Regulation (EU) 2016/679), UK GDPR, CCPA, and any other applicable data protection legislation.</li>
+      </ul>
+
+      <h2>2. Scope and Purpose of Processing</h2>
+      <p>The Processor shall process Personal Data solely for the purpose of providing the MailVeriQ Gateway service as described in the principal agreement, including:</p>
+      <ul>
+        <li>Receiving, scanning, and routing outbound email messages through the DLP gateway</li>
+        <li>Applying data loss prevention policies configured by the Controller</li>
+        <li>Quarantining flagged email messages and managing approval workflows</li>
+        <li>Generating audit logs, compliance reports, and analytics</li>
+        <li>Providing technical support and maintaining service availability</li>
+      </ul>
+      <p>The categories of Personal Data processed may include email addresses, names, email content, attachment content, metadata (timestamps, IP addresses), and any personal data contained within outbound email messages processed through the gateway.</p>
+
+      <h2>3. Controller and Processor Roles</h2>
+      <p>The Controller determines the purposes and means of processing Personal Data. The Controller is responsible for ensuring that it has a lawful basis for processing and that appropriate notices have been provided to Data Subjects.</p>
+      <p>The Processor shall process Personal Data only on documented instructions from the Controller, except where required to do so by applicable law. The Processor shall promptly inform the Controller if, in its opinion, an instruction infringes Applicable Data Protection Law.</p>
+
+      <h2>4. Confidentiality</h2>
+      <p>The Processor shall ensure that all personnel authorized to process Personal Data have committed to confidentiality obligations or are under an appropriate statutory obligation of confidentiality. Access to Personal Data is restricted to personnel who require it for the performance of the services.</p>
+
+      <h2>5. Security Measures</h2>
+      <p>The Processor shall implement and maintain appropriate technical and organizational measures to protect Personal Data against unauthorized or unlawful processing and against accidental loss, destruction, or damage. These measures include, at a minimum:</p>
+      <ul>
+        <li>AES-256-GCM encryption for all Personal Data at rest</li>
+        <li>TLS 1.3 encryption for all Personal Data in transit</li>
+        <li>Database-level tenant isolation using PostgreSQL Row-Level Security</li>
+        <li>Role-based access control with least-privilege principles</li>
+        <li>Multi-factor authentication for all personnel with access to production systems</li>
+        <li>Regular vulnerability assessments and penetration testing</li>
+        <li>Immutable audit logging of all data access and processing operations</li>
+        <li>Automated monitoring and alerting for anomalous access patterns</li>
+      </ul>
+
+      <h2>6. Sub-Processors</h2>
+      <p>The Controller provides general authorization for the Processor to engage Sub-Processors to assist in providing the service. The Processor shall:</p>
+      <ul>
+        <li>Maintain a current list of Sub-Processors and make it available to the Controller upon request</li>
+        <li>Notify the Controller at least 30 days in advance of any intended changes to Sub-Processors</li>
+        <li>Enter into written agreements with each Sub-Processor imposing data protection obligations no less protective than those set forth in this DPA</li>
+        <li>Remain fully liable to the Controller for the performance of each Sub-Processor's obligations</li>
+      </ul>
+      <p>If the Controller objects to a new Sub-Processor on reasonable data protection grounds, the parties shall discuss the concern in good faith. If the objection cannot be resolved, the Controller may terminate the affected service without penalty.</p>
+
+      <h2>7. Data Subject Rights</h2>
+      <p>The Processor shall assist the Controller in fulfilling its obligations to respond to Data Subject requests under Applicable Data Protection Law. The Processor shall:</p>
+      <ul>
+        <li>Promptly notify the Controller if it receives a request from a Data Subject directly</li>
+        <li>Not respond to Data Subject requests without the Controller's prior written authorization, unless required by law</li>
+        <li>Provide reasonable technical and organizational assistance to enable the Controller to fulfill access, rectification, erasure, portability, and restriction requests</li>
+      </ul>
+
+      <h2>8. Data Breach Notification</h2>
+      <p>In the event of a Data Breach affecting Personal Data processed on behalf of the Controller, the Processor shall:</p>
+      <ul>
+        <li>Notify the Controller without undue delay and in no event later than 72 hours after becoming aware of the breach</li>
+        <li>Provide the Controller with sufficient information to enable the Controller to meet its notification obligations under Applicable Data Protection Law, including the nature of the breach, categories and approximate number of Data Subjects affected, likely consequences, and measures taken or proposed to mitigate the breach</li>
+        <li>Cooperate with the Controller and take reasonable steps to assist in the investigation, mitigation, and remediation of the breach</li>
+        <li>Document all Data Breaches, including the facts, effects, and remedial actions taken</li>
+      </ul>
+
+      <h2>9. Data Return and Deletion</h2>
+      <p>Upon termination or expiration of the principal agreement, the Processor shall, at the Controller's election:</p>
+      <ul>
+        <li>Return all Personal Data to the Controller in a structured, commonly used, and machine-readable format within 30 days of the request</li>
+        <li>Delete all Personal Data from the Processor's systems, including backups, within 90 days of termination, unless retention is required by applicable law</li>
+        <li>Provide written certification of deletion upon the Controller's request</li>
+      </ul>
+      <p>During the transition period, the Processor shall continue to apply all protections required by this DPA.</p>
+
+      <h2>10. Audit Rights</h2>
+      <p>The Processor shall make available to the Controller all information necessary to demonstrate compliance with this DPA and Applicable Data Protection Law. The Controller (or an independent third-party auditor appointed by the Controller) may conduct audits, subject to the following conditions:</p>
+      <ul>
+        <li>Audits shall be conducted no more than once per calendar year, unless a Data Breach or regulatory investigation necessitates additional review</li>
+        <li>The Controller shall provide at least 30 days' written notice prior to an audit</li>
+        <li>Audits shall be conducted during normal business hours with minimal disruption to the Processor's operations</li>
+        <li>The Controller shall bear the costs of the audit, unless the audit reveals material non-compliance by the Processor</li>
+        <li>The Processor may satisfy audit requests by providing the Controller with copies of relevant third-party audit reports (SOC 2 Type II, ISO 27001) where applicable</li>
+      </ul>
+
+      <h2>11. International Data Transfers</h2>
+      <p>The Processor shall not transfer Personal Data to a country outside of the Controller's designated processing region without the Controller's prior written consent. Where international transfers are necessary, the Processor shall ensure that appropriate safeguards are in place, including:</p>
+      <ul>
+        <li>Standard Contractual Clauses (SCCs) approved by the European Commission, as applicable</li>
+        <li>Adequacy decisions recognized by the relevant data protection authority</li>
+        <li>Any other transfer mechanism permitted under Applicable Data Protection Law</li>
+      </ul>
+      <p>Enterprise customers may designate specific AWS regions for data processing and storage during tenant onboarding. The Processor shall ensure that data remains within the designated region unless explicitly authorized otherwise.</p>
+
+      <h2>12. Term and Termination</h2>
+      <p>This DPA shall remain in effect for the duration of the principal agreement. The obligations of the Processor with respect to the protection of Personal Data shall survive the termination of this DPA for as long as the Processor retains any Personal Data processed on behalf of the Controller.</p>
+
+      <h2>13. Contact</h2>
+      <p>For questions about this Data Processing Agreement or to request a signed copy:<br>
+      Email: <a href="mailto:legal@mailveriq.com">legal@mailveriq.com</a><br>
+      MailVeriQ Technologies<br>
+      Legal &amp; Privacy Team</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top:none;padding-top:0;">
+        <p>&copy; 2026 MailVeriQ Technologies. All rights reserved.</p>
+        <div>
+          <a href="index.html" style="color:var(--blue);font-size:0.85rem;">Home</a> &nbsp;|&nbsp;
+          <a href="privacy.html" style="color:var(--text-muted);font-size:0.85rem;">Privacy</a> &nbsp;|&nbsp;
+          <a href="terms.html" style="color:var(--text-muted);font-size:0.85rem;">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
