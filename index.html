@@ -48,15 +48,7 @@
   <nav class="navbar" id="navbar">
     <div class="container navbar-inner">
       <a href="#" class="logo">
-        <svg class="logo-icon" viewBox="0 0 36 36" fill="none">
-          <defs><linearGradient id="logoGrad" x1="0" y1="0" x2="36" y2="36"><stop offset="0%" stop-color="#14B8A6"/><stop offset="100%" stop-color="#0A3D5C"/></linearGradient></defs>
-          <rect width="36" height="36" rx="8" fill="url(#logoGrad)"/>
-          <rect x="8" y="13" width="15" height="11" rx="1.5" stroke="white" stroke-width="1.4" fill="none"/>
-          <path d="M8 14.5L15.5 19.5L23 14.5" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-          <circle cx="25" cy="14" r="5.5" fill="#0A3D5C" stroke="white" stroke-width="1.2"/>
-          <path d="M22.8 14L24.3 15.5L27.2 12.5" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-        </svg>
-        <span class="logo-text">Mail<span class="logo-accent">VeriQ</span></span>
+        <img src="./assets/images/logo2.png" alt="MailVeriQ" class="logo-img">
       </a>
       <div class="nav-links" id="nav-links">
         <a href="#platform" class="nav-link">Platform</a>
@@ -110,23 +102,33 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
                 Without MailVeriQ
               </div>
-              <div class="risk-mini-grid">
-                <div class="risk-cell medium"></div>
-                <div class="risk-cell high"></div>
-                <div class="risk-cell critical has-dot" data-tip="PII leak"><span class="risk-dot"></span></div>
-                <div class="risk-cell critical"></div>
-                <div class="risk-cell low"></div>
-                <div class="risk-cell medium"></div>
-                <div class="risk-cell high has-dot" data-tip="Wrong recipient"><span class="risk-dot"></span></div>
-                <div class="risk-cell critical has-dot" data-tip="Unencrypted PHI"><span class="risk-dot"></span></div>
-                <div class="risk-cell low"></div>
-                <div class="risk-cell medium"></div>
-                <div class="risk-cell high has-dot" data-tip="Card data"><span class="risk-dot"></span></div>
-                <div class="risk-cell critical"></div>
-                <div class="risk-cell low"></div>
-                <div class="risk-cell low"></div>
-                <div class="risk-cell medium"></div>
-                <div class="risk-cell high has-dot" data-tip="Bulk export"><span class="risk-dot"></span></div>
+              <div class="risk-grid-wrapper">
+                <div class="risk-y-axis">
+                  <span>PII</span><span>PHI</span><span>PCI</span><span>IP</span>
+                </div>
+                <div class="risk-grid-inner">
+                  <div class="risk-mini-grid">
+                    <div class="risk-cell medium"></div>
+                    <div class="risk-cell high"></div>
+                    <div class="risk-cell critical has-dot" data-tip="PII leak"><span class="risk-dot"></span></div>
+                    <div class="risk-cell critical"></div>
+                    <div class="risk-cell low"></div>
+                    <div class="risk-cell medium"></div>
+                    <div class="risk-cell high has-dot" data-tip="Wrong recipient"><span class="risk-dot"></span></div>
+                    <div class="risk-cell critical has-dot" data-tip="Unencrypted PHI"><span class="risk-dot"></span></div>
+                    <div class="risk-cell low"></div>
+                    <div class="risk-cell medium"></div>
+                    <div class="risk-cell high has-dot" data-tip="Card data"><span class="risk-dot"></span></div>
+                    <div class="risk-cell critical"></div>
+                    <div class="risk-cell low"></div>
+                    <div class="risk-cell low"></div>
+                    <div class="risk-cell medium"></div>
+                    <div class="risk-cell high has-dot" data-tip="Bulk export"><span class="risk-dot"></span></div>
+                  </div>
+                  <div class="risk-x-axis">
+                    <span>Email</span><span>Files</span><span>Headers</span><span>Body</span>
+                  </div>
+                </div>
               </div>
               <div class="risk-incidents">
                 <span class="risk-incident-count">5 critical risks</span> undetected
@@ -144,23 +146,33 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
                 With MailVeriQ
               </div>
-              <div class="risk-mini-grid">
-                <div class="risk-cell medium"></div>
-                <div class="risk-cell high"></div>
-                <div class="risk-cell critical"></div>
-                <div class="risk-cell critical"></div>
-                <div class="risk-cell low"></div>
-                <div class="risk-cell medium"></div>
-                <div class="risk-cell high"></div>
-                <div class="risk-cell critical"></div>
-                <div class="risk-cell low has-dot resolved" data-tip="PII quarantined"><span class="risk-dot green"></span></div>
-                <div class="risk-cell low has-dot resolved" data-tip="Recipient verified"><span class="risk-dot green"></span></div>
-                <div class="risk-cell medium"></div>
-                <div class="risk-cell high"></div>
-                <div class="risk-cell low has-dot resolved" data-tip="PHI encrypted"><span class="risk-dot green"></span></div>
-                <div class="risk-cell low has-dot resolved" data-tip="Card data stripped"><span class="risk-dot green"></span></div>
-                <div class="risk-cell low"></div>
-                <div class="risk-cell low has-dot resolved" data-tip="Export blocked"><span class="risk-dot green"></span></div>
+              <div class="risk-grid-wrapper">
+                <div class="risk-y-axis">
+                  <span>PII</span><span>PHI</span><span>PCI</span><span>IP</span>
+                </div>
+                <div class="risk-grid-inner">
+                  <div class="risk-mini-grid">
+                    <div class="risk-cell medium"></div>
+                    <div class="risk-cell high"></div>
+                    <div class="risk-cell critical"></div>
+                    <div class="risk-cell critical"></div>
+                    <div class="risk-cell low"></div>
+                    <div class="risk-cell medium"></div>
+                    <div class="risk-cell high"></div>
+                    <div class="risk-cell critical"></div>
+                    <div class="risk-cell low has-dot resolved" data-tip="PII quarantined"><span class="risk-dot green"></span></div>
+                    <div class="risk-cell low has-dot resolved" data-tip="Recipient verified"><span class="risk-dot green"></span></div>
+                    <div class="risk-cell medium"></div>
+                    <div class="risk-cell high"></div>
+                    <div class="risk-cell low has-dot resolved" data-tip="PHI encrypted"><span class="risk-dot green"></span></div>
+                    <div class="risk-cell low has-dot resolved" data-tip="Card data stripped"><span class="risk-dot green"></span></div>
+                    <div class="risk-cell low"></div>
+                    <div class="risk-cell low has-dot resolved" data-tip="Export blocked"><span class="risk-dot green"></span></div>
+                  </div>
+                  <div class="risk-x-axis">
+                    <span>Email</span><span>Files</span><span>Headers</span><span>Body</span>
+                  </div>
+                </div>
               </div>
               <div class="risk-incidents safe">
                 <span class="risk-incident-count">5 risks</span> detected &amp; resolved
@@ -217,32 +229,91 @@
           <span class="topbar-url">app.mailveriq.com/dashboard</span>
         </div>
         <div class="dash-preview-body">
+          <!-- Top stats -->
           <div class="dp-stats-row">
             <div class="dp-stat"><span class="dp-stat-num">12,847</span><span class="dp-stat-lbl">Emails Scanned</span></div>
             <div class="dp-stat"><span class="dp-stat-num dp-red">23</span><span class="dp-stat-lbl">Threats Blocked</span></div>
             <div class="dp-stat"><span class="dp-stat-num dp-green">156</span><span class="dp-stat-lbl">Reviewed &amp; Approved</span></div>
             <div class="dp-stat"><span class="dp-stat-num">4</span><span class="dp-stat-lbl">Active Frameworks</span></div>
           </div>
-          <div class="dp-panels-row">
+          <!-- Three-panel layout -->
+          <div class="dp-three-col">
+            <!-- Panel 1: Policy Actions Breakdown -->
             <div class="dp-panel">
-              <span class="dp-panel-title">Email Volume — Last 7 Days</span>
-              <div class="dp-mini-bars">
-                <div class="dp-bar" style="height:45%"></div>
-                <div class="dp-bar" style="height:60%"></div>
-                <div class="dp-bar" style="height:75%"></div>
-                <div class="dp-bar" style="height:55%"></div>
-                <div class="dp-bar" style="height:85%"></div>
-                <div class="dp-bar" style="height:25%"></div>
-                <div class="dp-bar dp-bar-active" style="height:90%"></div>
+              <span class="dp-panel-title">Policy Actions Today</span>
+              <div class="dp-action-bars">
+                <div class="dp-action-row">
+                  <span class="dp-action-label">Blocked</span>
+                  <div class="dp-action-track"><div class="dp-action-fill dp-fill-red" style="width:18%"></div></div>
+                  <span class="dp-action-val">23</span>
+                </div>
+                <div class="dp-action-row">
+                  <span class="dp-action-label">Quarantined</span>
+                  <div class="dp-action-track"><div class="dp-action-fill dp-fill-yellow" style="width:32%"></div></div>
+                  <span class="dp-action-val">41</span>
+                </div>
+                <div class="dp-action-row">
+                  <span class="dp-action-label">Encrypted</span>
+                  <div class="dp-action-track"><div class="dp-action-fill dp-fill-blue" style="width:25%"></div></div>
+                  <span class="dp-action-val">32</span>
+                </div>
+                <div class="dp-action-row">
+                  <span class="dp-action-label">Approved</span>
+                  <div class="dp-action-track"><div class="dp-action-fill dp-fill-green" style="width:78%"></div></div>
+                  <span class="dp-action-val">156</span>
+                </div>
               </div>
             </div>
+            <!-- Panel 2: Sensitive Data Detected -->
             <div class="dp-panel">
-              <span class="dp-panel-title">Recent Activity</span>
-              <div class="dp-activity">
-                <div class="dp-activity-row"><span class="dp-dot dp-dot-red"></span><span>Credit card data blocked in attachment</span></div>
-                <div class="dp-activity-row"><span class="dp-dot dp-dot-green"></span><span>Quarterly report approved after review</span></div>
-                <div class="dp-activity-row"><span class="dp-dot dp-dot-yellow"></span><span>PHI detected — quarantined for review</span></div>
-                <div class="dp-activity-row"><span class="dp-dot dp-dot-green"></span><span>12 low-risk emails auto-approved</span></div>
+              <span class="dp-panel-title">Sensitive Data Detected</span>
+              <div class="dp-detection-grid">
+                <div class="dp-detect-item">
+                  <span class="dp-detect-type">PII</span>
+                  <span class="dp-detect-count dp-red">14</span>
+                  <span class="dp-detect-sub">SSN, DOB, Address</span>
+                </div>
+                <div class="dp-detect-item">
+                  <span class="dp-detect-type">PHI</span>
+                  <span class="dp-detect-count dp-yellow">8</span>
+                  <span class="dp-detect-sub">Patient records, Dx codes</span>
+                </div>
+                <div class="dp-detect-item">
+                  <span class="dp-detect-type">PCI</span>
+                  <span class="dp-detect-count dp-red">5</span>
+                  <span class="dp-detect-sub">Card numbers, CVV</span>
+                </div>
+                <div class="dp-detect-item">
+                  <span class="dp-detect-type">IP</span>
+                  <span class="dp-detect-count dp-yellow">3</span>
+                  <span class="dp-detect-sub">Source code, trade secrets</span>
+                </div>
+              </div>
+            </div>
+            <!-- Panel 3: Live Threat Feed -->
+            <div class="dp-panel">
+              <span class="dp-panel-title">Live Threat Feed</span>
+              <div class="dp-threat-feed">
+                <div class="dp-threat-row">
+                  <span class="dp-threat-badge dp-badge-critical">BLOCKED</span>
+                  <span class="dp-threat-msg">Credit card data in .xlsx attachment</span>
+                  <span class="dp-threat-time">2m ago</span>
+                </div>
+                <div class="dp-threat-row">
+                  <span class="dp-threat-badge dp-badge-warning">QUARANTINED</span>
+                  <span class="dp-threat-msg">PHI detected — pending reviewer</span>
+                  <span class="dp-threat-time">8m ago</span>
+                </div>
+                <div class="dp-threat-row">
+                  <span class="dp-threat-badge dp-badge-info">ENCRYPTED</span>
+                  <span class="dp-threat-msg">NDA sent to external counsel</span>
+                  <span class="dp-threat-time">12m ago</span>
+                </div>
+                <div class="dp-threat-row">
+                  <span class="dp-threat-badge dp-badge-ok">APPROVED</span>
+                  <span class="dp-threat-msg">Quarterly report — auto-cleared</span>
+                  <span class="dp-threat-time">15m ago</span>
+                </div>
               </div>
             </div>
           </div>
@@ -269,7 +340,7 @@
           <span class="deploy-label">User sends email</span>
         </div>
         <div class="deploy-arrow">
-          <svg viewBox="0 0 40 24"><path d="M0 12h36" stroke="#CBD5E1" stroke-width="2"/><polygon points="33,6 40,12 33,18" fill="#CBD5E1"/></svg>
+          <svg viewBox="0 0 40 24"><path d="M0 12h36" stroke="#38A9E6" stroke-width="2"/><polygon points="33,6 40,12 33,18" fill="#38A9E6"/></svg>
         </div>
         <div class="deploy-step">
           <div class="deploy-icon mail-server">
@@ -278,17 +349,17 @@
           <span class="deploy-label">Your mail server</span>
         </div>
         <div class="deploy-arrow">
-          <svg viewBox="0 0 40 24"><path d="M0 12h36" stroke="#CBD5E1" stroke-width="2"/><polygon points="33,6 40,12 33,18" fill="#CBD5E1"/></svg>
+          <svg viewBox="0 0 40 24"><path d="M0 12h36" stroke="#38A9E6" stroke-width="2"/><polygon points="33,6 40,12 33,18" fill="#38A9E6"/></svg>
         </div>
         <div class="deploy-step deploy-gateway">
           <div class="deploy-icon gateway">
-            <svg viewBox="0 0 36 36" fill="none"><defs><linearGradient id="dGrad" x1="0" y1="0" x2="36" y2="36"><stop offset="0%" stop-color="#14B8A6"/><stop offset="100%" stop-color="#0A3D5C"/></linearGradient></defs><rect width="36" height="36" rx="8" fill="url(#dGrad)"/><rect x="8" y="13" width="15" height="11" rx="1.5" stroke="white" stroke-width="1.4" fill="none"/><path d="M8 14.5L15.5 19.5L23 14.5" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/><circle cx="25" cy="14" r="5.5" fill="#0A3D5C" stroke="white" stroke-width="1.2"/><path d="M22.8 14L24.3 15.5L27.2 12.5" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+            <img src="./assets/images/logo2.png" alt="MailVeriQ" class="deploy-logo-img">
           </div>
           <span class="deploy-label"><strong>MailVeriQ Gateway</strong></span>
           <span class="deploy-actions">Scan → Detect → Decide</span>
         </div>
         <div class="deploy-arrow">
-          <svg viewBox="0 0 40 24"><path d="M0 12h36" stroke="#CBD5E1" stroke-width="2"/><polygon points="33,6 40,12 33,18" fill="#CBD5E1"/></svg>
+          <svg viewBox="0 0 40 24"><path d="M0 12h36" stroke="#38A9E6" stroke-width="2"/><polygon points="33,6 40,12 33,18" fill="#38A9E6"/></svg>
         </div>
         <div class="deploy-step">
           <div class="deploy-icon">
@@ -510,7 +581,7 @@
           <p>The email is transparently routed through the MailVeriQ Gateway before leaving your environment. Encrypted connections ensure data is secure in transit.</p>
         </div>
         <div class="step-connector">
-          <svg viewBox="0 0 40 24"><path d="M0 12h40" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="4 4"/><polygon points="36,6 40,12 36,18" fill="#CBD5E1"/></svg>
+          <svg viewBox="0 0 40 24"><path d="M0 12h40" stroke="#38A9E6" stroke-width="2" stroke-dasharray="4 4"/><polygon points="36,6 40,12 36,18" fill="#38A9E6"/></svg>
         </div>
         <div class="step-card">
           <div class="step-number">2</div>
@@ -518,7 +589,7 @@
           <p>The body and attachments are scanned against pre-built and custom patterns for financial data, health records, personal identifiers, and confidential business information.</p>
         </div>
         <div class="step-connector">
-          <svg viewBox="0 0 40 24"><path d="M0 12h40" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="4 4"/><polygon points="36,6 40,12 36,18" fill="#CBD5E1"/></svg>
+          <svg viewBox="0 0 40 24"><path d="M0 12h40" stroke="#38A9E6" stroke-width="2" stroke-dasharray="4 4"/><polygon points="36,6 40,12 36,18" fill="#38A9E6"/></svg>
         </div>
         <div class="step-card">
           <div class="step-number">3</div>
@@ -526,7 +597,7 @@
           <p>Clean emails go out instantly; risky emails are held in quarantine and assigned to the right reviewers according to your approval chain and SLAs.</p>
         </div>
         <div class="step-connector">
-          <svg viewBox="0 0 40 24"><path d="M0 12h40" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="4 4"/><polygon points="36,6 40,12 36,18" fill="#CBD5E1"/></svg>
+          <svg viewBox="0 0 40 24"><path d="M0 12h40" stroke="#38A9E6" stroke-width="2" stroke-dasharray="4 4"/><polygon points="36,6 40,12 36,18" fill="#38A9E6"/></svg>
         </div>
         <div class="step-card">
           <div class="step-number">4</div>
@@ -747,15 +818,7 @@
       <div class="footer-top">
         <div class="footer-brand">
           <a href="#" class="logo">
-            <svg class="logo-icon" viewBox="0 0 36 36" fill="none">
-              <defs><linearGradient id="fGrad" x1="0" y1="0" x2="36" y2="36"><stop offset="0%" stop-color="#14B8A6"/><stop offset="100%" stop-color="#0A3D5C"/></linearGradient></defs>
-              <rect width="36" height="36" rx="8" fill="url(#fGrad)"/>
-              <rect x="8" y="13" width="15" height="11" rx="1.5" stroke="white" stroke-width="1.4" fill="none"/>
-              <path d="M8 14.5L15.5 19.5L23 14.5" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-              <circle cx="25" cy="14" r="5.5" fill="#0A3D5C" stroke="white" stroke-width="1.2"/>
-              <path d="M22.8 14L24.3 15.5L27.2 12.5" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-            </svg>
-            <span class="logo-text">Mail<span class="logo-accent">VeriQ</span></span>
+            <img src="./assets/images/logo2.png" alt="MailVeriQ" class="logo-img">
           </a>
           <p class="footer-tagline">Enterprise email DLP.<br>Protect what matters.</p>
         </div>

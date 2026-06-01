@@ -31,11 +31,21 @@
   <nav class="navbar scrolled" id="navbar">
     <div class="container navbar-inner">
       <a href="./index.html" class="logo">
-        <svg class="logo-icon" viewBox="0 0 36 36" fill="none"><defs><linearGradient id="lgr" x1="0" y1="0" x2="36" y2="36"><stop offset="0%" stop-color="#14B8A6"/><stop offset="100%" stop-color="#0A3D5C"/></linearGradient></defs><rect width="36" height="36" rx="8" fill="url(#lgr)"/><rect x="8" y="13" width="15" height="11" rx="1.5" stroke="white" stroke-width="1.4" fill="none"/><path d="M8 14.5L15.5 19.5L23 14.5" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/><circle cx="25" cy="14" r="5.5" fill="#0A3D5C" stroke="white" stroke-width="1.2"/><path d="M22.8 14L24.3 15.5L27.2 12.5" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
-        <span class="logo-text">Mail<span class="logo-accent">VeriQ</span></span>
+        <img src="./assets/images/logo2.png" alt="MailVeriQ" class="logo-img">
       </a>
+      <div class="nav-links" id="nav-links">
+        <a href="./index.html#platform" class="nav-link">Platform</a>
+        <a href="./index.html#solutions" class="nav-link">Solutions</a>
+        <a href="./index.html#integrations" class="nav-link">Integrations</a>
+        <a href="./index.html#how-it-works" class="nav-link">How It Works</a>
+        <a href="./index.html#security" class="nav-link">Security</a>
+      </div>
       <div class="nav-actions">
-        <a href="./index.html" class="btn btn-ghost">Back to Home</a>
+        <a href="https://app.mailveriq.com" class="btn btn-ghost" target="_blank">Sign In</a>
+        <a href="./index.html#contact" class="btn btn-primary">Request Demo</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
   </nav>
@@ -171,15 +181,54 @@
 
   <footer class="footer">
     <div class="container">
-      <div class="footer-bottom" style="border-top:none;padding-top:0;">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="./index.html" class="logo">
+            <img src="./assets/images/logo2.png" alt="MailVeriQ" class="logo-img">
+          </a>
+          <p class="footer-tagline">Enterprise email DLP.<br>Protect what matters.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Product</h4>
+            <a href="./index.html#platform">Platform</a>
+            <a href="./index.html#solutions">Solutions</a>
+            <a href="./index.html#how-it-works">How It Works</a>
+            <a href="./dashboard.html">Dashboard</a>
+            <a href="./support.html">Support</a>
+          </div>
+          <div class="footer-col">
+            <h4>Security</h4>
+            <a href="./index.html#security">Security &amp; Compliance</a>
+            <a href="./trust.html">Trust Center</a>
+            <a href="./trust.html#responsible-disclosure">Responsible Disclosure</a>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="./about.html">About Us</a>
+            <a href="./careers.html">Careers</a>
+            <a href="./index.html#contact">Contact</a>
+            <a href="./blog.html">Blog</a>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="./privacy.html">Privacy Policy</a>
+            <a href="./terms.html">Terms of Service</a>
+            <a href="./dpa.html">Data Processing Agreement</a>
+            <a href="./sla.html">Service Level Agreement</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
         <p>&copy; 2026 MailVeriQ Technologies. All rights reserved.</p>
-        <div>
-          <a href="./index.html" style="color:var(--blue);font-size:0.85rem;">Home</a> &nbsp;|&nbsp;
-          <a href="./privacy.html" style="color:var(--text-muted);font-size:0.85rem;">Privacy</a> &nbsp;|&nbsp;
-          <a href="./terms.html" style="color:var(--text-muted);font-size:0.85rem;">Terms</a>
+        <div class="footer-socials">
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a>
         </div>
       </div>
     </div>
   </footer>
+  <script src="./assets/js/main.js"></script>
 </body>
 </html>
