@@ -102,36 +102,30 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
                 Without MailVeriQ
               </div>
-              <div class="risk-grid-wrapper">
-                <div class="risk-y-axis">
-                  <span>PII</span><span>PHI</span><span>PCI</span><span>IP</span>
+              <div class="risk-list">
+                <div class="risk-row">
+                  <span class="risk-tag risk-tag-leak">LEAKED</span>
+                  <span class="risk-desc">SSN found in email body</span>
                 </div>
-                <div class="risk-grid-inner">
-                  <div class="risk-mini-grid">
-                    <div class="risk-cell medium"></div>
-                    <div class="risk-cell high"></div>
-                    <div class="risk-cell critical has-dot" data-tip="PII leak"><span class="risk-dot"></span></div>
-                    <div class="risk-cell critical"></div>
-                    <div class="risk-cell low"></div>
-                    <div class="risk-cell medium"></div>
-                    <div class="risk-cell high has-dot" data-tip="Wrong recipient"><span class="risk-dot"></span></div>
-                    <div class="risk-cell critical has-dot" data-tip="Unencrypted PHI"><span class="risk-dot"></span></div>
-                    <div class="risk-cell low"></div>
-                    <div class="risk-cell medium"></div>
-                    <div class="risk-cell high has-dot" data-tip="Card data"><span class="risk-dot"></span></div>
-                    <div class="risk-cell critical"></div>
-                    <div class="risk-cell low"></div>
-                    <div class="risk-cell low"></div>
-                    <div class="risk-cell medium"></div>
-                    <div class="risk-cell high has-dot" data-tip="Bulk export"><span class="risk-dot"></span></div>
-                  </div>
-                  <div class="risk-x-axis">
-                    <span>Email</span><span>Files</span><span>Headers</span><span>Body</span>
-                  </div>
+                <div class="risk-row">
+                  <span class="risk-tag risk-tag-leak">LEAKED</span>
+                  <span class="risk-desc">Patient record in .xlsx attachment</span>
+                </div>
+                <div class="risk-row">
+                  <span class="risk-tag risk-tag-leak">LEAKED</span>
+                  <span class="risk-desc">Credit card number in PDF</span>
+                </div>
+                <div class="risk-row">
+                  <span class="risk-tag risk-tag-undetected">MISSED</span>
+                  <span class="risk-desc">Source code sent to personal email</span>
+                </div>
+                <div class="risk-row">
+                  <span class="risk-tag risk-tag-undetected">MISSED</span>
+                  <span class="risk-desc">NDA sent to wrong recipient</span>
                 </div>
               </div>
               <div class="risk-incidents">
-                <span class="risk-incident-count">5 critical risks</span> undetected
+                <span class="risk-incident-count">5 data leaks</span> — zero visibility
               </div>
             </div>
 
@@ -146,46 +140,32 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
                 With MailVeriQ
               </div>
-              <div class="risk-grid-wrapper">
-                <div class="risk-y-axis">
-                  <span>PII</span><span>PHI</span><span>PCI</span><span>IP</span>
+              <div class="risk-list">
+                <div class="risk-row">
+                  <span class="risk-tag risk-tag-blocked">BLOCKED</span>
+                  <span class="risk-desc">SSN detected &amp; email stopped</span>
                 </div>
-                <div class="risk-grid-inner">
-                  <div class="risk-mini-grid">
-                    <div class="risk-cell medium"></div>
-                    <div class="risk-cell high"></div>
-                    <div class="risk-cell critical"></div>
-                    <div class="risk-cell critical"></div>
-                    <div class="risk-cell low"></div>
-                    <div class="risk-cell medium"></div>
-                    <div class="risk-cell high"></div>
-                    <div class="risk-cell critical"></div>
-                    <div class="risk-cell low has-dot resolved" data-tip="PII quarantined"><span class="risk-dot green"></span></div>
-                    <div class="risk-cell low has-dot resolved" data-tip="Recipient verified"><span class="risk-dot green"></span></div>
-                    <div class="risk-cell medium"></div>
-                    <div class="risk-cell high"></div>
-                    <div class="risk-cell low has-dot resolved" data-tip="PHI encrypted"><span class="risk-dot green"></span></div>
-                    <div class="risk-cell low has-dot resolved" data-tip="Card data stripped"><span class="risk-dot green"></span></div>
-                    <div class="risk-cell low"></div>
-                    <div class="risk-cell low has-dot resolved" data-tip="Export blocked"><span class="risk-dot green"></span></div>
-                  </div>
-                  <div class="risk-x-axis">
-                    <span>Email</span><span>Files</span><span>Headers</span><span>Body</span>
-                  </div>
+                <div class="risk-row">
+                  <span class="risk-tag risk-tag-quarantined">QUARANTINED</span>
+                  <span class="risk-desc">Patient record held for review</span>
+                </div>
+                <div class="risk-row">
+                  <span class="risk-tag risk-tag-blocked">BLOCKED</span>
+                  <span class="risk-desc">Credit card stripped from PDF</span>
+                </div>
+                <div class="risk-row">
+                  <span class="risk-tag risk-tag-encrypted">ENCRYPTED</span>
+                  <span class="risk-desc">Source code encrypted before send</span>
+                </div>
+                <div class="risk-row">
+                  <span class="risk-tag risk-tag-blocked">BLOCKED</span>
+                  <span class="risk-desc">Wrong recipient flagged &amp; stopped</span>
                 </div>
               </div>
               <div class="risk-incidents safe">
-                <span class="risk-incident-count">5 risks</span> detected &amp; resolved
+                <span class="risk-incident-count">5 risks caught</span> — all resolved
               </div>
             </div>
-          </div>
-          <!-- Shared legend -->
-          <div class="risk-legend">
-            <span class="risk-legend-item"><span class="risk-swatch rl-low"></span>Low</span>
-            <span class="risk-legend-item"><span class="risk-swatch rl-med"></span>Medium</span>
-            <span class="risk-legend-item"><span class="risk-swatch rl-high"></span>High</span>
-            <span class="risk-legend-item"><span class="risk-swatch rl-crit"></span>Critical</span>
-            <span class="risk-legend-item"><span class="risk-swatch rl-resolved"></span>Resolved</span>
           </div>
         </div>
       </div>
