@@ -67,16 +67,44 @@
       var orig = btn.innerHTML;
       btn.innerHTML = 'Sending...';
       btn.disabled = true;
-      setTimeout(function() {
-        btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Demo Requested!';
-        btn.style.background = '#059669';
+
+      var data = {
+        name: form.querySelector('#name').value,
+        email: form.querySelector('#email').value,
+        company: form.querySelector('#company').value,
+        employees: form.querySelector('#employees').value,
+        message: form.querySelector('#message').value
+      };
+
+      fetch('https://zzggvxhjan2cjtkrmysbodnjsu0nwopt.lambda-url.ap-south-1.on.aws/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      })
+      .then(function(res) { return res.json(); })
+      .then(function(result) {
+        if (result.success) {
+          btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Demo Requested!';
+          btn.style.background = '#059669';
+          form.reset();
+          setTimeout(function() {
+            btn.innerHTML = orig;
+            btn.style.background = '';
+            btn.disabled = false;
+          }, 4000);
+        } else {
+          throw new Error(result.error || 'Submission failed');
+        }
+      })
+      .catch(function(err) {
+        btn.innerHTML = 'Failed — try again';
+        btn.style.background = '#DC2626';
         setTimeout(function() {
           btn.innerHTML = orig;
           btn.style.background = '';
           btn.disabled = false;
-          form.reset();
         }, 3000);
-      }, 1200);
+      });
     });
   }
 })();
