@@ -9,14 +9,17 @@
 }
 
 :root {
-  --navy: #12182D;
-  --navy-light: #1A2240;
-  --navy-surface: #1E2745;
-  --blue: #38A9E6;
-  --blue-light: #5CBCEF;
-  --blue-pale: rgba(56,169,230,0.1);
-  --teal: #38A9E6;
-  --teal-pale: rgba(56,169,230,0.08);
+  --navy: #0B1120;
+  --navy-light: #131B2E;
+  --navy-surface: #1A2338;
+  --blue: #3A7EED;
+  --blue-light: #5A96F2;
+  --blue-pale: rgba(58,126,237,0.1);
+  --cyan: #33D4E3;
+  --cyan-light: #5DE0EC;
+  --cyan-pale: rgba(51,212,227,0.1);
+  --teal: #33D4E3;
+  --teal-pale: rgba(51,212,227,0.08);
   --green: #34D399;
   --green-pale: rgba(52,211,153,0.1);
   --purple: #A78BFA;
@@ -24,11 +27,11 @@
   --orange: #FB923C;
   --orange-pale: rgba(251,146,60,0.1);
   --red: #F87171;
-  --bg: #12182D;
-  --bg-subtle: #1A2240;
-  --bg-muted: #1E2745;
-  --border: rgba(255,255,255,0.1);
-  --border-light: rgba(255,255,255,0.06);
+  --bg: #0B1120;
+  --bg-subtle: #131B2E;
+  --bg-muted: #1A2338;
+  --border: rgba(58,126,237,0.15);
+  --border-light: rgba(58,126,237,0.08);
   --text: #F1F5F9;
   --text-secondary: rgba(255,255,255,0.7);
   --text-muted: rgba(255,255,255,0.4);
@@ -81,8 +84,8 @@ ul { list-style: none; }
   color: white;
 }
 .btn-primary:hover {
-  background: #2D95CC;
-  box-shadow: 0 4px 14px rgba(56,169,230,0.35);
+  background: #2E6BD4;
+  box-shadow: 0 4px 14px rgba(58,126,237,0.35);
   transform: translateY(-1px);
 }
 
@@ -113,7 +116,7 @@ ul { list-style: none; }
   right: 0;
   z-index: 1000;
   padding: 10px 0;
-  background: rgba(18,24,45,0.92);
+  background: rgba(11,17,32,0.92);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(255,255,255,0.06);
@@ -132,7 +135,7 @@ ul { list-style: none; }
 }
 
 .logo { display: flex; align-items: center; }
-.logo-img { height: 72px; width: auto; object-fit: contain; }
+.logo-img { height: 48px; width: auto; object-fit: contain; }
 footer .logo-img { height: 48px; }
 
 .nav-links { display: flex; gap: 32px; }
@@ -289,9 +292,9 @@ footer .logo-img { height: 48px; }
   border: 1px solid rgba(52,211,153,0.25);
 }
 .risk-tag-quarantined {
-  background: rgba(56,169,230,0.15);
-  color: #5CBCEF;
-  border: 1px solid rgba(56,169,230,0.25);
+  background: rgba(51,212,227,0.15);
+  color: #33D4E3;
+  border: 1px solid rgba(51,212,227,0.25);
 }
 .risk-tag-encrypted {
   background: rgba(167,139,250,0.15);
@@ -372,7 +375,7 @@ footer .logo-img { height: 48px; }
 /* --- Dashboard Preview Mockup --- */
 .dash-preview-section {
   padding: 80px 0 100px;
-  background: linear-gradient(170deg, #1B3A5C 0%, #1A4B6E 30%, #1E5F85 60%, #1B3A5C 100%);
+  background: linear-gradient(170deg, #0F2847 0%, #132F5A 30%, #1A3D6E 60%, #0F2847 100%);
   position: relative;
   overflow: hidden;
 }
