@@ -76,7 +76,7 @@
         message: form.querySelector('#message').value
       };
 
-      fetch('https://zzggvxhjan2cjtkrmysbodnjsu0nwopt.lambda-url.ap-south-1.on.aws/', {
+      fetch('https://brk8a9vqh6.execute-api.ap-south-1.amazonaws.com/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
